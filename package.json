@@ -1,16 +1,15 @@
 {
-	"name": "template",
+	"name": "Solarity",
 	"version": "0.1.0",
-	"author": "Hazim Arafa <hazimarafa80@gmail.com>",
+	"author": "Spet77",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/HazimAr/"
+		"url": "https://github.com/Spet77/Solarity"
 	},
 	"keywords": [
 		"NextJS",
-		"ChakraUI",
-		"Boilerplate"
+		"ChakraUI"
 	],
 	"scripts": {
 		"dev": "next dev",

@@ -2,11 +2,11 @@
 const GA_TRACKING_ID = "";
 
 const META = {
-	title: "NextJS ChakraUI Template | Hazim Arafa",
+	title: "Solarity | Simplihacks",
 	lang: "en-us",
 	description:
-		"Boilerplate built to scale containing Typescript + NextJS + ChakraUI + Google Analytics + ESLint + Jest + Styled Components + Icons",
-	url: "https://boilerplate.hazim.tech",
+		"",
+	url: "",
 	image: "/logo.png",
 	tags: ["nextjs", "typescript", "chakraui", "google analytics", "eslint", "jest", "styled components", "icons"]
 };

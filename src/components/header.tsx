@@ -13,7 +13,7 @@ export default function Main() {
 			py="10px"
 			as="header"
 		>
-			<Heading>NextJS Boilerplate</Heading>
+			<Heading>Solarity</Heading>
 			<HStack justify="center" align="center">
 				<NextChakraLink
 					href="https://github.com/HazimAr/"
