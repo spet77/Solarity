@@ -1,13 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-import { GA_TRACKING_ID, META } from "config";
+import { META } from "config";
 
 export default function Document() {
   return (
       <Html lang="en-us">
         <Head>
           <meta name="description" content={META.description} />
-          <meta name="author" content="https://hazim.tech" />
           <meta name="keywords" content={META.tags.join(",")} />
 
           <meta itemProp="name" content={META.title} />
@@ -25,11 +24,6 @@ export default function Document() {
           <meta name="twitter:description" content={META.description} />
           <meta name="twitter:image" content={META.image} />
 
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
-          <script dangerouslySetInnerHTML={{__html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_TRACKING_ID}',{page_path: window.location.pathname});`,}} />
         </Head>
         <body>
           <Main />
