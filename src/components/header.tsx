@@ -1,33 +1,39 @@
-import { Heading, HStack } from "@chakra-ui/react";
-import NextChakraLink from "@components/nextChakraLink";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import { useColorModeValue } from "@chakra-ui/react";
+import { Heading, HStack, VStack } from "@chakra-ui/react";
 
 export default function Main() {
 	return (
-		<HStack
-			borderTop="5px #5cfff1 solid"
-			justify="space-between"
-			bg="#1a202c"
-			px="50px"
-			py="10px"
-			as="header"
+		<VStack
+			spacing={0}
 		>
-			<Heading>Solarity</Heading>
-			<HStack justify="center" align="center">
-				<NextChakraLink
-					href="https://github.com/HazimAr/"
-					aria-label="Github"
-				>
-					<FaGithub size="30px" />
-				</NextChakraLink>
-				<NextChakraLink
-					href="https://www.linkedin.com/in/hazim-arafa-a439aa205/"
-					aria-label="LinkedIn"
-				>
-					<FaLinkedin size="30px" />
-				</NextChakraLink>
+			<HStack
+				justify="space-between"
+				bg="linear-gradient(to right, #EB9486, #F3DE8A)"
+				px="50px"
+				py="10px"
+				as="header"
+				w="100%"
+			>
+				<Heading color="white">Solarity</Heading>
 			</HStack>
-		</HStack>
+			<svg viewBox="0 0 1000 100">
+				<linearGradient id="gradient">
+					<stop
+						stopColor={useColorModeValue('#EB9486', '#EB9486')}
+						offset="0%"
+					/>
+					<stop
+						stopColor={useColorModeValue('#F3DE8A', '#F3DE8A')}
+						offset="100%"
+					/>
+
+				</linearGradient>
+				<path
+					fill="url(#gradient)"
+					d="M 0 50 Q 250 100 500 50 T 1000 50 L 1000 0 L 0 0 Z"
+				/>
+			</svg>
+		</VStack>
+
 	);
 }

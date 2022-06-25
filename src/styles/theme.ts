@@ -1,16 +1,22 @@
 import { extendTheme } from "@chakra-ui/react";
+import { Button } from "./components";
 
 const theme = extendTheme({
 	colors: {
-		secondary: "#171a23",
-		primary: "#5cfff1",
+		secondary: "#F9F8F8", // white
+		primary: "#EB9486", // tangerine
+		tertiary: "#7E7F9A", // light purple
+		quaternary: "#272838", // dark purple
+	},
+	components: {
+		Button,
 	},
 	styles: {
 		global: () => ({
 			body: {
 				fontFamily:
 					"-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
-				color: "white",
+				color: "#7E7F9A",
 				backgroundColor: "secondary",
 			},
 			"&::-webkit-scrollbar": {
